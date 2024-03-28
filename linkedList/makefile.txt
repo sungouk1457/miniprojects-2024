@@ -1,0 +1,9 @@
+project: projectmain.o projectfunc.o
+	gcc -o project projectmain.o projectfunc.o
+ 
+projectmain.o:project2main.c project2.h
+	gcc -c -o projectmain.o project2main.c
+
+projectfunc.o:project2func.c project2.h
+ gcc -c -o projectfunc.o project2func.c
+
