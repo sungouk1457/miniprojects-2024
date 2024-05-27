@@ -55,13 +55,13 @@ IoT 개발자 미니프로젝트 리포지토리
 - 라즈베리파이 셋팅
     1. RPi 기본 구성 - RPi + MicroSD + Power
     2. RPi 기본 셋팅
-        [x] 최신 업그레이드
-        [x] 한글화
-        - 키보드 변경
-        [x]화면사이즈 변경(RealVNC)
-        - Pi Apps 엡설치 도우미 앱
-        - GitHub Desktop, VS Code
-        - 네트워크 확인
+        - [x] 최신 업그레이드
+        - [x] 한글화
+        - [x] 키보드 변경
+        - [x] 화면사이즈 변경(RealVNC)
+        - [x] Pi Apps 엡설치 도우미 앱
+        - [x] GitHub Desktop, VS Code
+        - [x] 네트워크 확인
         - RealVNC Sercer 자동실행 설정
 
 - 스마트홈 연동 클래스 미니프로젝트
@@ -69,27 +69,27 @@ IoT 개발자 미니프로젝트 리포지토리
 
 ## 4일차
 - 라즈베리파이 IoT장비 설치
-    [x] 라즈베리파이 카메라
-    [x] GPIO HAT
-    [x] 브레드보드와 연결
-    [x] DHT11센서
-    [x] RGB LED 모듈
+    - [x] 라즈베리파이 카메라
+    - [x] GPIO HAT
+    - [x] 브레드보드와 연결
+    - [x] DHT11센서
+    - [x] RGB LED 모듈
         - V - 5V 연결
         - R - GPI04 연결
         - B - GPI05 연결
         - G - GPI06 연결
-    [-] 서브모터
+    - [x] 서브모터
     
 ## 5일차
 - 라즈베리파이 IoT장비 설치
-    [x] DHT11 센서
-    - GND - GND 8개중 아무데나 연결
-    - VCC - 5V 연결
-    - S - GPIO18 연결
+    - [x] DHT11 센서
+        - GND - GND 8개중 아무데나 연결
+        - VCC - 5V 연결
+        - S - GPIO18 연결
 
 ## 6,7일차
 - 네트워크 대공사
-    [x] 개인공유기, PC, 라즈베리파이
+    - [x] 개인공유기, PC, 라즈베리파이
 
 - 스마트홈 연동 클래스 미니프로젝트
     - 온습도 센서, RGB LED
@@ -102,8 +102,26 @@ IoT 개발자 미니프로젝트 리포지토리
     - **MQTT** - 가장 편리 AWS IoT, Azura IoT 클라우드 산업계표준으로 사용
 
 - MQTT 통신
-    [x] Mosquitto Broker 설치
+    - [x] Mosquitto Broker 설치
         - mosquitto.conf : listener 1883 0.0.0.0, allow_anonymous true
         - 방화벽 인바운드 열기
-    - RPi : paho-mqtt 패키지 설치
-    - Win : MQTT.NET Nuget패키지 설치, 수신(subcriber)
+    - [x] RPi : paho-mqtt 패키지 설치
+    - [] Win/C# : MQTT Nuget패키지 설치, 수신(subcriber)
+        - M2Mqtt : 가볍게 쓸수 있음. 업데이트가 안됨
+        - MQTTNet : MS에서 개발, 무겁다. 최신까지 업데이트 잘됨
+
+## 9일차
+- 스마트홈 연동 클래스 미니프로젝트
+    - [x] WPF 수신 MQTT데이터 DB로 저장
+    - [x] MQTT데이터 실시간 모니터링 - 온도
+    - [] MQTT로 RPI 제어(LED제어)
+    - [] WPF MQTT데이터 히스토리 확인
+
+## 10일차
+- 스마트홈 연동 클래스 미니프로젝트 마무리
+    - [x] WPF 수신 MQTT데이터 DB로 저장
+    - [x] MQTT데이터 실시간 모니터링 - 습도
+    - [] MQTT로 RPI 제어(LED제어)
+    - [] WPF MQTT데이터 히스토리 확인
+
+- 조별 미니프로젝트 발표
